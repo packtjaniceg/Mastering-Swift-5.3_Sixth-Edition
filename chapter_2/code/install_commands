@@ -1,0 +1,31 @@
+//dependencies
+sudo apt-get install git cmake ninja-build clang python uuid-dev libicu-dev icu-devtools libedit-dev libxml2-dev libsqlite3-dev swig libpython-dev python-six libncurses5-dev pkg-config libcurl4-openssl-dev systemtap-sdt-dev tzdata rsync 
+
+//Swift Source
+mkdir swift-source
+cd swift-source
+git clone https://github.com/apple/swift.git
+./swift/utils/update-checkout --clone
+
+
+//Build Swift
+./swift/utils/build-script --preset=buildbot_swiftpm_linux_platform,tools=RA,stdlib=RA
+
+
+//install Swift
+cd /opt
+sudo mkdir swift
+sudo chmod 777 swift
+cd swift
+mkdir swift-5.3-dev
+cd swift-5.3-dev
+cp -R ~/swift-source/build/buildbot_incremental/toolchain-linux-x86_64/* ./
+
+sudo ln -s /opt/swift/swift-5.3-dev swift-current
+
+cd ~
+echo ‘PATH=$PATH:/opt/swift/swift-current/usr/bin/’ >> .profile
+source ~/.profile
+
+
+
