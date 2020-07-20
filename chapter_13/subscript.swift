@@ -39,10 +39,10 @@ print(table[addition: 4])
 // ###############################################
 
 struct Hello {
-    subscript (name: String) -> String {
+    static subscript (name: String) -> String {
         return "Hello \(name)"
     }
 }
 
-var hello = Hello()
-print(hello["Jon"])
+
+let greeting = Hello["Jon"]

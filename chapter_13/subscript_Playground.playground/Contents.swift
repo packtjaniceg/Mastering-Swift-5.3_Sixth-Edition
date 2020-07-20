@@ -2,7 +2,7 @@ import Cocoa
 
 
 class MyNames {
-    private var names = ["Jon", "Kim", "Kailey", "Kara"]
+    private var names = ["Jon", "Kailey", "Kara"]
     subscript(index: Int) -> String {
         get {
             return names[index]
@@ -39,10 +39,10 @@ print(table[addition: 4])
 // ###############################################
 
 struct Hello {
-    subscript (name: String) -> String {
+    static subscript (name: String) -> String {
         return "Hello \(name)"
     }
 }
 
-var hello = Hello()
-print(hello["Jon"])
+
+let greeting = Hello["Jon"]
