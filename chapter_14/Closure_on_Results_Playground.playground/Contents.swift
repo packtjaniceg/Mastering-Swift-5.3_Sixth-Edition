@@ -3,8 +3,7 @@ import Cocoa
 class TestType {
     typealias ResultsClosure = ((String) -> Void)
     
-    func isGreater(numOne: Int, numTwo: Int, successHandler: ResultsClosure,
-                   
+    func isGreater(numOne: Int, numTwo: Int, successHandler: ResultsClosure,   
                    failureHandler: ResultsClosure) {
         if numOne > numTwo {
             successHandler("\(numOne) is greater than \(numTwo)")

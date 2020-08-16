@@ -26,3 +26,6 @@ case .Puzzle(let price, let pieces):
 
 var x = 10 % 3    //x will equal 1
 var y = 10 % 6
+
+
+
