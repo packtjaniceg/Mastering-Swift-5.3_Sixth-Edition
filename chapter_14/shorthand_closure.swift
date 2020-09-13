@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 func testFunction(num: Int, handler:() -> Void) {
     for _ in 0..<num {

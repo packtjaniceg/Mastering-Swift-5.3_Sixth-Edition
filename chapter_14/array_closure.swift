@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 
 let guests = ["Jon", "Kim", "Kailey", "Kara"]

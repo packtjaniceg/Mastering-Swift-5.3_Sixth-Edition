@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 struct TestType {
     typealias getNumClosure = ((Int, Int) -> Int)

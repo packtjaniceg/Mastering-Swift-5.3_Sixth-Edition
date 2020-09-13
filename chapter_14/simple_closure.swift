@@ -1,4 +1,4 @@
-import Cocoa
+import Foundation
 
 let clos1 = { () -> Void in
     print("Hello World")
