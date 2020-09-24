@@ -7,7 +7,7 @@ func sayHello(greeting: String, names: String...) {
 }
 
 
-sayHello(greeting:"Hello", names: "Jon", "Kim")
+sayHello(greeting:"Hello", names: "Jon", "Kara")
 
 func reverse(first: inout String, second: inout String) {
     let tmp = first

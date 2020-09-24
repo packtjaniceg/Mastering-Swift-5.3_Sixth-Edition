@@ -1,7 +1,7 @@
 import Cocoa
 
 func getNames() -> [String] {
-    var retArray = ["Jon", "Kailey", "Kara"]
+    let retArray = ["Jon", "Kailey", "Kara"]
     return retArray
 }
 

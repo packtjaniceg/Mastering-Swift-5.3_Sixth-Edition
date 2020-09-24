@@ -41,7 +41,7 @@ let greetGuest2 = {
 
 
 func temperatures(calculate:(Int)->Void) {
-    var tempArray = [72,74,76,68,70,72,66]
+    let tempArray = [72,74,76,68,70,72,66]
     tempArray.map(calculate)
 }
 

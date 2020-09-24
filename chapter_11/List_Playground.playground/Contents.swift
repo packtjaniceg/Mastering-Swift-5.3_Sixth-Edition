@@ -9,11 +9,10 @@ class List<T> {
     }
     
     func getItemAtIndex(index: Int) -> T? {
-        if items.count>index {
+        guard items.count < index else {
             return items[index]
-        } else {
-            return nil
         }
+        return nil
     }
     
 }
