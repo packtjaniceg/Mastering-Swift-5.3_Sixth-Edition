@@ -23,7 +23,8 @@ class  MyReferenceType  {
 func  getGradeForAssignment(assignment:  inout  MyValueType)  {
     //  Code  to  get  grade  from  DB
     //  Random  code  here  to  illustrate  issue
-    let  num  =  Int(arc4random_uniform(20)  +  80)
+    let num = Int.random(in: 80..<100)
+
     assignment.grade  =  num
     print("Grade  for  \(assignment.name)  is  \(num)")
 }
