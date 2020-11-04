@@ -110,9 +110,9 @@ default:
 let myNumber = 10
 switch myNumber {
 case _ where myNumber.isMultiple(of: 2):
-    print("Divisible by 2")
+    print("Multiple of 2")
 case _ where myNumber.isMultiple(of: 3):
-    print("Divisible by 3")
+    print("Multiple of 3")
 default:
     print("No Match")
 }
